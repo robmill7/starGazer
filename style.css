@@ -1,0 +1,92 @@
+/******************************************
+/* CSS
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  width: 800px;
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+
+h1,h2,h3{
+  text-align: center;
+
+  
+  
+}
+h3{
+  background-color: rgb(220, 245, 245);
+  
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  
+}
+ input{
+   margin: auto;
+   display: block;
+   
+ 
+}
+
+/* :root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+} */
+.div1 {
+  background-color: #ad1f1f;
+  align-items: center;
+}
+button{
+ /* background-color: var(--primary-color);*/
+  color: rgb(142, 142, 235);
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* CSS for smaller screens */
+@media screen and (max-width: 480px) {
+  /* Adjust font sizes */
+  h1 {
+    font-size: 24px;
+  }
+  /* Change layout */
+  .div1 {
+    flex-direction: column;
+  }
+}
+
+/* CSS for larger screens */
+@media screen and (min-width: 768px) {
+  /* Adjust font sizes */
+  h1 {
+    font-size: 48px;
+  }
+  /* Change layout */
+  .div1 {
+    flex-direction: row;
+  }
+}
+
+
